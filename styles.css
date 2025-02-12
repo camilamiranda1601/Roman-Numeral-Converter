@@ -1,50 +1,68 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #ffbdf9;
-    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #2d1b53; /* Fondo oscuro con un toque vibrante */
+    color: #e2a0ff; /* Texto morado pastel */
     text-align: center;
     margin: 0;
     padding: 0;
-    display: flex;flex-direction: column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: linear-gradient(45deg, #ff007f, #2a2a72); /* Degradado que da efecto retro */
 }
 
 h1 {
     color: #fff;
-    font-size: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para dar más impacto */
 }
 
 #number {
-    width: 200px;
-    padding: 10px;
-    font-size: 1rem;
-    border: 2px solid #000000;
-    border-radius: 5px;
+    width: 250px;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: 2px solid #e2a0ff;
+    border-radius: 10px;
     outline: none;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    background-color: #f3f1f5;
+    color: #333;
+    box-shadow: 0 0 15px rgba(226, 160, 255, 0.6); /* Brillo alrededor del input */
+}
+
+#number:focus {
+    border-color: #ff007f;
+    box-shadow: 0 0 20px rgba(255, 0, 127, 0.8);
 }
 
 #convert-btn {
-    background-color: #d358f8;
-    color: black;
-    border: none; 
-    padding: 10px 20px;
-    font-size: 1rem;
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background 3.5ms;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 0, 127, 0.6);
 }
 
 #convert-btn:hover {
-    background-color: #e054ff;
+    background-color: #ff2d95;
+    box-shadow: 0 4px 20px rgba(255, 45, 149, 0.8);
 }
 
 #output {
-    margin-top: 15px;
-    font-size: 1.2rem;
+    margin-top: 30px;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
 }
